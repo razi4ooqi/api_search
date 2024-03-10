@@ -67,7 +67,7 @@
 
             let users = await fetch('https://dummyjson.com/users').then(res => res.json())
                 .then(data => {
-                    let originalUsers = data.users;
+                    let originalUsers = data.users; 
 
                     function updateUsers(searchQuery) {
                         let filterUser = originalUsers.filter(user =>
